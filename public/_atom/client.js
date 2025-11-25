@@ -605,6 +605,8 @@ video {
   top: 0px;
 } .z-50 {
   z-index: 50;
+} .m-1 {
+  margin: 0.25rem;
 } .m-2 {
   margin: 0.5rem;
 } .m-4 {
