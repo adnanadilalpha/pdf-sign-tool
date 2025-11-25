@@ -12,7 +12,7 @@
     "deploy:docker": "docker build -t atom-app . && docker run -p 3000:3000 atom-app"
   },
   "dependencies": {
-    "atom-framework": "^1.0.0",
+    "atom-framework": "^1.5.3",
     "pdf-lib": "^1.17.1"
   },
   "devDependencies": {
