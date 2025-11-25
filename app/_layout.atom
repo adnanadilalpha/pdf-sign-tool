@@ -1,0 +1,14 @@
+@View {
+  // IMPORTANT: Use props.content, not props.children
+  const { content } = props || {};
+  
+  return div([
+    Navbar(),
+    main(
+      content ? content : div("Loading...", { className: "flex justify-center p-20" }),
+      { className: "min-h-screen" }
+    ),
+    Footer()
+  ], { className: "layout flex flex-col min-h-screen" });
+}
+

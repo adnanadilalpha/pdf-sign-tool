@@ -1,0 +1,28 @@
+@View {
+  return nav([
+    div([
+      div([
+        h1("PDF Sign", {
+          className: "text-xl sm:text-2xl font-bold text-black tracking-tight"
+        })
+      ], { className: "flex items-center" }),
+      div([
+        button("Features", {
+          onclick: () => {
+            document.querySelector('#features')?.scrollIntoView({ behavior: 'smooth' });
+          },
+          className: "px-4 py-2 text-black/70 hover:text-black transition font-medium"
+        }),
+        button("Get Started", {
+          onclick: () => {
+            document.querySelector('#upload-section')?.scrollIntoView({ behavior: 'smooth' });
+          },
+          className: "px-6 py-2 bg-black text-white rounded-full font-medium hover:bg-black/90 transition shadow-lg"
+        })
+      ], { className: "hidden sm:flex items-center gap-6" })
+    ], { className: "max-w-6xl mx-auto px-6 lg:px-8 flex justify-between items-center py-5" })
+  ], { 
+    className: "fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-black/10 shadow-sm"
+  });
+}
+
