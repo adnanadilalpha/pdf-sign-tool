@@ -1196,7 +1196,7 @@ video {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-} `;if(typeof document<"u"&&kp){let t=document.createElement("style");t.innerHTML=kp,document.head.appendChild(t)}var Ky=`
+} `;if(typeof document<"u"&&kp&&!document.querySelector("link[data-atom-css]")){let e=document.createElement("style");e.setAttribute("data-atom-css",""),e.innerHTML=kp,document.head.appendChild(e)}var Ky=`
     .err-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.85); backdrop-filter: blur(10px); display: flex; align-items: center; justify-content: center; z-index: 2147483647; font-family: -apple-system, monospace; }
     .err-card { width: 100%; max-width: 650px; background: #0a0a0a; border: 1px solid #333; border-radius: 16px; box-shadow: 0 50px 100px -20px rgba(0,0,0,0.7); overflow: hidden; }
     .err-header { background: #1f1212; border-bottom: 1px solid #451a1a; padding: 16px 24px; display: flex; align-items: center; gap: 12px; }

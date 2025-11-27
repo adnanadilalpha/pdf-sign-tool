@@ -2,10 +2,20 @@
   "version": 2,
   "installCommand": "npm install",
   "buildCommand": "npm run build",
-  "outputDirectory": "dist",
   "routes": [
     {
+      "handle": "filesystem"
+    },
+    {
       "src": "/_atom/ws",
+      "dest": "/api/atom-server.js"
+    },
+    {
+      "src": "/_atom/image",
+      "dest": "/api/atom-server.js"
+    },
+    {
+      "src": "/_atom/revalidate",
       "dest": "/api/atom-server.js"
     },
     {
@@ -15,5 +25,11 @@
   ],
   "env": {
     "NODE_ENV": "production"
+  },
+  "functions": {
+    "api/atom-server.js": {
+      "maxDuration": 10,
+      "includeFiles": "public/**/*"
+    }
   }
 }
